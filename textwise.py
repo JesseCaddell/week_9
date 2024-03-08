@@ -1,12 +1,11 @@
 def stringReverse(input):
     if len(input) == 0:
-        return
+        return ""
     else:
-        stringReverse(input[1:])
-
-        print(input[0], end='')
+        return stringReverse(input[1:]) + input[0]
 
 
+reversed_string = stringReverse("hello")
 
-stringReverse("hello")
+print(reversed_string)
     
